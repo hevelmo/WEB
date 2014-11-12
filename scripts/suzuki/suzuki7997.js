@@ -1071,9 +1071,7 @@ $(document).ready( function(){
                         total_pay       =  funding_data.price -  f_amount,
 //                        total_pay       =  funding_data.price -  f_amount,
                         f_monthly_pay   = funding_core( total_pay, funding_data.months  );
-                    var enganche = moneyFormat( f_amount );
                     $('#live-engagement,#funding_result_engagement,#funding_resume_engagement,#fr_car_engagement').html( moneyFormat( f_amount ) );
-                    $('#fr_car_engagement').value('value',enganche);
                     $('#live-months,#funding_result_months,#funding_resume_months,#fr_car_months,#fr_car_months').html( funding_data.months + ' meses' );
                     $('#live-price,#funding_result_price,#funding_resume_price,#fr_car_price,#fr_car_price').html(  moneyFormat(  funding_data.price ) );
                     $('#funding_result_monthly_payment,#funding_resume_monthly_payment,#fr_car_monthly_payment,#fr_car_monthly_payment').html(  moneyFormat(  f_monthly_pay ) );

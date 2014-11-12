@@ -37,5 +37,6 @@ $mensaje = wordwrap($mensaje, 70);
 
 // Enviar
 mail("mercadotecnia@suzuki-lm.com.mx", 'Mensaje de la pagina de internet Suzuki GDL', $mensaje, $header) or die("¡Error!");
+
 header ("location: index.html");
 ?>
